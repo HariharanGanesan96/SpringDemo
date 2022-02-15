@@ -1,0 +1,252 @@
+@charset "ISO-8859-1";
+
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+body {
+	background-image: linear-gradient(rgba(0, 0, 0, .5) 50%,
+		rgb(0, 0, 0, .5) 50%), url("../images/background/background1.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-transform: capitalize;
+	color: white;
+}
+
+h1{
+	color: white;
+}
+header button {
+	position: absolute;
+	top: 20px;
+	left: 520px;
+	height: 30px;
+	width: 100px;
+	border: 1px solid;
+	border-color: tomato;
+	font-size: 17px;
+	font-weight: bold;
+	border-top-right-radius: 10px;
+	border-left: none;
+	background-color: tomato;
+}
+
+nav {
+	position: absolute;
+	left: 705px;
+	top: 20px;
+}
+
+h2 {
+	margin-top: 30px;
+	margin-bottom: 10px;
+	margin-left: 40px;
+	padding: 30px;
+	width: 250px;
+	font-size: 30px;
+}
+
+h2:hover {
+	color: black;
+}
+
+#data {
+	width: 95%;
+	margin-left: 0;
+	padding-left: 50px;
+	font-size: 25px;
+	display: inline;
+	height: 520px;
+	float: left;
+}
+
+#data p {
+	line-height: 1.7;
+	padding-left: 20px;
+}
+
+#data div {
+	display: inline;
+	float: left;
+}
+
+#image {
+	height: 380px;
+	width: 300px;
+}
+
+#image img {
+	width: 300px;
+	height: 380px;
+	border: 1px solid;
+	border-color:black;
+	border-radius: 10px;
+}
+
+#divcontent {
+	width: 160px;
+	font-weight: bold;
+}
+
+#divdata {
+	width: 650px;
+}
+
+#data button {
+	margin-top: 20px;
+	width: 150px;
+	height: 30px;
+	background-color: rgb(16, 177, 16);
+	border-radius: 10px;
+	border: none;
+	color: white;
+	font-size: 17px;
+	font-weight: bold;
+	box-shadow: 0 0 5px black;
+}
+#data input{
+	width: 200px;
+	height: 30px;
+	font-size: 15px;
+	
+}
+#description {
+	margin-top: 20px;
+}
+
+table {
+	margin-left: 50px;
+	line-height: 2;
+}
+
+table td {
+	font-size:25px;
+	height: 25px;
+	width: 500px;
+	padding-left: 10px;
+}
+
+
+table input {
+	border-radius: 5px;
+	font-size: 15px;
+}
+
+table button{
+	margin-top: 20px;
+}
+#update {
+	width: 130px;
+	height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: tomato;
+	border: none;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 0 5px black;
+}
+
+#ok {
+	width: 80px;
+	height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: rgb(4, 155, 29);
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0 5px black;
+}
+
+#update1 {
+	width: 130px;
+	height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: tomato;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0 5px black;
+}
+
+#updatewallet {
+	width: 130px;
+	height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: rgb(4, 155, 29);
+	border: none;
+	border-radius: 10px;
+	box-shadow: 0 0 5px black;
+}
+
+#logout {
+	width: 130px;
+	height: 30px;
+	font-size: 15px;
+	font-weight: bold;
+	color: white;
+	background-color: tomato;
+	border: none;
+	margin: auto;
+	border-radius: 10px;
+	box-shadow: 0 0 5px black;
+}
+
+#updatewallet a {
+	color: white;
+	text-decoration: none;
+}
+
+table select {
+	width: 215px;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	color: black;
+	padding-left: 10px;
+	outline: none;
+	font-size: 15px;
+}
+
+input {
+	width: 215px;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	color: black;
+	padding-left: 10px;
+	outline: none;
+	font-size: 15px;	
+}
+
+ select option {
+	color: black;
+	padding-left: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+	-moz-appearance: textfield;
+}
+input[type=checkbox] {
+	width: 50px;
+	margin-top: 22px;
+}
+table label{
+  width: 200px;	
+}

@@ -1,0 +1,121 @@
+@charset "ISO-8859-1";
+/* Page Margin styles */
+* {
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+/* Page background styles */
+body {
+	background-image: linear-gradient(rgba(0, 0, 0, .5) 50%,
+		rgb(0, 0, 0, .5) 50%), url("../images/background/background.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	text-transform: capitalize;
+}
+
+/* Pet register form styles */
+.animalform {
+	position: absolute;
+	left: 20%;
+	top: 21%;
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 22px;
+}
+
+#register{
+	text-align: center;
+}
+table {
+	margin-top: -30px;
+	border-radius: 5px;
+	padding-left: 20px;
+	background-color: rgba(194, 204, 198, 0.959);
+	font-size: 20px;
+	width: 850px;
+	height: 450px;
+}
+
+table th, td {
+	padding-left: 30px;
+	line-height: 2;
+	margin-top: 10px;
+	color: black;
+}
+
+table input:focus {
+	outline: none;
+}
+
+table label {
+	color: black;
+	width: 150px;
+}
+
+table input {
+	width: 200px;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	color: black;
+	padding-left: 10px;
+	font-size: 15px;
+}
+
+table input[type=file] {
+	height: 40px;
+	width: 200px;
+    margin-left: -10px;
+	}
+table select {
+	width: 200px;
+	height: 30px;
+	border-radius: 5px;
+	border: none;
+	color: black;
+	padding-left: 10px;
+}
+
+table select option {
+	color: black;
+	padding-left: 10px;
+}
+
+table button {
+	width: 130px;
+	height: 35px;
+	color: white;
+	background-color: rgb(61, 160, 36);
+	border: none;
+	border-radius: 5px;
+	font-size: 17px;
+	font-weight: bold;
+	box-shadow: 0 0 5px black;
+	position: relative;
+	top:-25px;
+	margin-left: 20px;
+	
+}
+
+table button:hover {
+	color: black;
+	background-color: white;
+}
+
+table textarea {
+	width: 400px;
+	height: 60px;
+	border-radius: 5px;
+	border: none;
+	resize: none;
+	padding-left: 20px;
+	color: black;
+	font-size: 15px;
+}
+
+#descriptionlabel{
+	position: relative;
+	top:-40px;
+}
