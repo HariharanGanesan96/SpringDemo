@@ -1,40 +1,69 @@
-package com.chainsys.pet.model;
+package com.chainsys.pet.entity;
 
+import java.io.Serializable;
 import java.sql.Date;
 
-import org.springframework.stereotype.Component;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Table;
+import javax.persistence.Id;
 
-@Component
-public class Customers{
+@Entity
+@Table(name="customers")
+public class CustomersEntity implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	@Id
+	@Column(name = "CUSTOMER_ID")
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int customerId;
 	
+	@Column(name = "CUSTOMER_FIRSTNAME")
 	private String firstName;
 	
+	@Column(name = "CUSTOMER_LASTNAME")
 	private String lastName;
 	
+	@Column(name = "CUSTOMER_USERNAME")
 	private String userName;
 	
+	@Column(name = "CUSTOMER_PASSWORD")
 	private String password;
 	
+	@Column(name = "CUSTOMER_EMAIL")
 	private String email;
 	
+	@Column(name = "CUSTOMER_MOBILENUMBER")
 	private long number;
 	
+	@Column(name = "CUSTOMER_WALLET")
 	private double wallet;
 	
+	@Column(name = "CUSTOMER_REG_DATE")
 	private Date regDate;
 	
+	@Column(name = "CUSTOMER_ADDRESS")
 	private String address;
 	
+	@Column(name = "CUSTOMER_CITY")
 	private String city;
 	
+	@Column(name = "CUSTOMER_PINCODE")
 	private int pincode;
 	
+	@Column(name = "CUSTOMER_GENDER")
 	private String gender;
 	
+	@Column(name = "CUSTOMER_IMAGE")
 	private String image;
 	
+	@Column(name = "STATUS")
 	private String staus;
 		
 	public String getStaus() {
@@ -168,11 +197,11 @@ public class Customers{
 				+ pincode + ", gender=" + gender + ", image=" + image + "]";
 	}
 
-	public Customers() {
+	public CustomersEntity() {
 		super();
 	}
 		
-	public Customers(int customerId, String firstName, String lastName, String gender, String userName, String password, String email,
+	public CustomersEntity(int customerId, String firstName, String lastName, String gender, String userName, String password, String email,
 			long number, double wallet, Date regDate, String address, int pincode, String image,String city,String status) {
 		super();
 		this.customerId = customerId;

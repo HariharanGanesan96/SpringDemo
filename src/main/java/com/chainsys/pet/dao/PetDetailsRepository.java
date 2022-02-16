@@ -1,11 +1,9 @@
 package com.chainsys.pet.dao;
 
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.chainsys.pet.model.PetDetails;
+import com.chainsys.pet.entity.PetDetailsEntity;
 
-@Repository
-public interface PetDetailsRepository extends CrudRepository<PetDetails, Integer>{
-
+public interface PetDetailsRepository extends JpaRepository<PetDetailsEntity, Integer>{
+	
 }
